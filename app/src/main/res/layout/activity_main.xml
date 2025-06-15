@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFEB3B"
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="413dp"
+        android:layout_height="60dp"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/number_guessing_game"
+        android:textColor="#EDE8E8"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/toolbar"
+        app:layout_constraintEnd_toEndOf="@+id/toolbar"
+        app:layout_constraintHorizontal_bias="0.042"
+        app:layout_constraintStart_toStartOf="@+id/toolbar"
+        app:layout_constraintTop_toTopOf="@+id/toolbar"
+        app:layout_constraintVertical_bias="0.488" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="350dp"
+        android:layout_height="147dp"
+        android:text="@string/please_select_a_number_of_digits_you_will_have_10_tries"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/radioGroupDigit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.69"
+        tools:ignore="TextSizeCheck" />
+
+    <Button
+        android:id="@+id/btnStart"
+        android:layout_width="226dp"
+        android:layout_height="65dp"
+        android:layout_marginBottom="40dp"
+        android:backgroundTint="#DB81F4"
+        android:text="@string/start"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/radioGroupDigit"
+        android:layout_width="295dp"
+        android:layout_height="375dp"
+        android:layout_marginBottom="4dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnStart"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <RadioButton
+            android:id="@+id/radioButton2Digit"
+            android:layout_width="293dp"
+            android:layout_height="87dp"
+            android:layout_marginBottom="28dp"
+            android:text="@string/_2_digit_number"
+            android:textSize="20sp" />
+
+        <RadioButton
+            android:id="@+id/radioButton3Digit"
+            android:layout_width="293dp"
+            android:layout_height="87dp"
+            android:layout_marginBottom="32dp"
+            android:text="@string/_3_digit_number"
+            android:textSize="20sp" />
+
+        <RadioButton
+            android:id="@+id/radioButton4Digit"
+            android:layout_width="293dp"
+            android:layout_height="87dp"
+            android:text="@string/_4_digit_number"
+            android:textSize="20sp" />
+    </RadioGroup>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFEB3B"
+        tools:context=".MainActivity"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="16dp">
+
+        <TextView
+            android:id="@+id/textViewRemainingAttempts"
+            android:layout_width="266dp"
+            android:layout_height="63dp"
+            android:layout_marginBottom="36dp"
+            android:text="@string/remaining_attempts"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toTopOf="@+id/textViewHint"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.496"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:ignore="TextSizeCheck" />
+
+        <TextView
+            android:id="@+id/textViewHint"
+            android:layout_width="266dp"
+            android:layout_height="63dp"
+            android:layout_marginBottom="52dp"
+            android:text=""
+            android:textAlignment="center"
+            android:textColor="#F44336"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toTopOf="@+id/editTextGuess"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.503"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar2"
+            android:layout_width="413dp"
+            android:layout_height="60dp"
+            android:background="?attr/colorPrimary"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="?attr/actionBarTheme"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"
+            tools:ignore="VisualLintBounds" />
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/number_guessing_game2"
+            android:textColor="#EDE8E8"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="@+id/toolbar2"
+            app:layout_constraintEnd_toEndOf="@+id/toolbar2"
+            app:layout_constraintHorizontal_bias="0.08"
+            app:layout_constraintStart_toStartOf="@+id/toolbar2"
+            app:layout_constraintTop_toTopOf="@+id/toolbar2"
+            app:layout_constraintVertical_bias="0.454" />
+
+        <TextView
+            android:id="@+id/textViewLastGuess"
+            android:layout_width="266dp"
+            android:layout_height="63dp"
+            android:text="@string/your_last_guess1"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toTopOf="@+id/textViewRemainingAttempts"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.503"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/toolbar2"
+            app:layout_constraintVertical_bias="0.72" />
+
+        <EditText
+            android:id="@+id/editTextGuess"
+            android:layout_width="266dp"
+            android:layout_height="59dp"
+            android:layout_marginBottom="40dp"
+            android:ems="10"
+            android:hint="@string/enter_your_number"
+            android:inputType="number"
+            android:text=""
+            android:textAlignment="center"
+            android:textColor="#7C7979"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toTopOf="@+id/btnConfirm"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.503"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:ignore="Autofill,LabelFor" />
+
+        <Button
+            android:id="@+id/btnConfirm"
+            android:layout_width="245dp"
+            android:layout_height="73dp"
+            android:layout_marginBottom="132dp"
+            android:backgroundTint="#B974E6"
+            android:text="@string/confirm"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

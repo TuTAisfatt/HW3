@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">HW_3</string>
+    <string name="start">Start</string>
+    <string name="_2_digit_number">2 Digit Number</string>
+    <string name="_3_digit_number">3 Digit Number</string>
+    <string name="_4_digit_number">4 Digit Number</string>
+    <string name="number_guessing_game">Number Guessing Game</string>
+    <string name="please_select_a_number_of_digits_you_will_have_10_tries">Please select a number of digits. You will have 10 tries</string>
+    <string name="conifrm">Conifrm</string>
+    <string name="enter_your_number">Enter your number</string>
+    <string name="number_guessing_game2">Number Guessing Game</string>
+    <string name="your_last_guess">Your last guess:</string>
+    <string name="remaining_attempts">Remaining Attempts:</string>
+    <string name="confirm">Confirm</string>
+    <string name="your_last_guess1">Your Last Guess:</string>
+</resources>
